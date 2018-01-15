@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>File Parser</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function loader() {
+                document.getElementById("button").hidden = true;
+                document.getElementById("loading").hidden = false;
+            }
+        </script>
+    </head>
+    <body>
+        <form method="post" action="HTMLCapturer">
+            <center>
+                <button id="button" style="padding: 15px" type="submit" onclick="loader()">Get Data</button>
+                <h4>Parse Data From <i>https://www.metoffice.gov.uk/climate/uk/summaries/datasets#yearOrdered</i> URL</h4>
+                <h3 id="loading" hidden="">Reading Webpage...</h3>
+            </center>
+        </form>
+    </body>
+</html>
